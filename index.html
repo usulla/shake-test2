@@ -28,10 +28,9 @@ body {
 
 <script type="text/javascript">
 window.onload = function() {
-
     //create a new instance of shake.js.
     var myShakeEvent = new Shake({
-        threshold: 15
+        threshold: 5
     });
 
     // start listening to device motion
@@ -42,7 +41,7 @@ window.onload = function() {
 
     //shake event callback
     function shakeEventDidOccur () {
-
+        console.log(999)
         //put your own code here etc.
         alert('Shake!!!!!!!!!!!!');
     }
